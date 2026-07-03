@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Todo Life Dashboard</h1>
+  </header>
+
+  <main>
+
+    <!-- Summary Dashboard -->
+    <section id="dashboard">
+      <div class="dashboard-counts">
+        <div class="count-item">
+          <span id="count-total">0</span>
+          <span class="count-label">Total</span>
+        </div>
+        <div class="count-item">
+          <span id="count-completed">0</span>
+          <span class="count-label">Completed</span>
+        </div>
+        <div class="count-item">
+          <span id="count-pending">0</span>
+          <span class="count-label">Pending</span>
+        </div>
+      </div>
+      <progress id="progress-bar" value="0" max="100"></progress>
+    </section>
+
+    <!-- Filter & Sort Controls -->
+    <section id="controls">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="pending">Pending</button>
+        <button class="filter-tab" data-filter="completed">Completed</button>
+      </div>
+      <div class="sort-controls">
+        <label for="sort-select">Sort by:</label>
+        <select id="sort-select" data-sort="created">
+          <option value="created">Created Date</option>
+          <option value="dueDate">Due Date</option>
+          <option value="priority">Priority</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Task Form -->
+    <section id="task-form">
+      <form id="add-task-form" novalidate>
+        <div class="form-group">
+          <label for="task-title">Task Title</label>
+          <input
+            type="text"
+            id="task-title"
+            name="task-title"
+            placeholder="What needs to be done?"
+            autocomplete="off"
+          >
+          <p id="form-error" class="form-error" aria-live="polite"></p>
+        </div>
+        <div class="form-group">
+          <label for="task-due-date">Due Date</label>
+          <input type="date" id="task-due-date" name="task-due-date">
+        </div>
+        <div class="form-group">
+          <label for="task-priority">Priority</label>
+          <select id="task-priority" name="task-priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <button type="submit" id="submit-btn">Add Task</button>
+      </form>
+    </section>
+
+    <!-- Task List -->
+    <section id="task-list">
+      <!-- Task cards are rendered here by js/app.js -->
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*
+ * Todo Life Dashboard — Stylesheet
+ * ============================================================
+ * File:    css/style.css
+ * Project: Todo Life Dashboard
+ * Description: All styling and responsive layout for the
+ *              single-page task management dashboard.
+ *
+ * Sections:
+ *   1. CSS Custom Properties (Design Tokens)
+ *   2. CSS Reset & Base Styles
+ *   3. Typography
+ *   4. Header
+ *   5. Main Layout (Grid)
+ *   6. Dashboard Summary (#dashboard)
+ *   7. Controls (#controls)
+ *   8. Task Form (#task-form)
+ *   9. Task List & Cards (#task-list, .task-card)
+ *  10. Priority Badges
+ *  11. Completion Styles
+ *  12. Empty / No-Results States
+ *  13. Responsive — Mobile (< 768px)
+ * ============================================================
+ */
