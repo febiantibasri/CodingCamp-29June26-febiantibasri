@@ -32,7 +32,7 @@ Nine implementation phases for a single-page Vanilla JS task manager: scaffoldin
 
 ## Tasks
 
-- [-] 1. Create project file structure and HTML boilerplate
+- [x] 1. Create project file structure and HTML boilerplate
   - Create `index.html` with valid HTML5 doctype, `<meta charset>`, `<meta viewport>`, title "Todo Life Dashboard", and links to `css/style.css` and `js/app.js`
   - Create `css/style.css` as an empty file with a top comment block
   - Create `js/app.js` as an IIFE skeleton: `(function() { 'use strict'; })();`
